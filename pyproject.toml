@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "jallery"
+version = "0.1.0"
+description = "Jallery, the gallery generator"
+authors = ["Pradeep Gowda <pradeep@btbytes.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Jinja2 = "^3.1.2"
+markdown2 = "^2.4.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+jallery = "jallery.main:main"

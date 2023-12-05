@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+		{{title}}
+		</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+		<style>
+		.galleryimg{
+			margin-top: 3em;
+		}
+		.caption {
+			font-size: 1.33em;
+			text-align: center;
+		}
+		.permalink a {
+			font-size: 0.8em;
+			color: #888;
+		}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>
+			{{title}}
+			</h1>
+			<div id="description">{{description}}</div>
+		</header>
+		<main>
+			{% for image in images %}
+				<div id="{{image.src}}" class="galleryimg">
+					<div class="caption">{{image.desc}}
+					</div>
+					<img src="{{image.src}}" alt="{{image.alt}}" class="image">
+					<p class="permalink"><a href="#{{image.src}}"># permalink</a></p>
+				</div>
+			{% endfor %}
+			<div id="footnote">{{footnote}}</div>
+		</main>
+		<footer>
+			<p>{{footer}}</p>
+		</footer>
+	</body>
+</html>
