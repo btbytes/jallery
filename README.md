@@ -11,3 +11,14 @@ What this code does now:
 1. `prepare` will put empty text files like `title.txt`, `description.txt`, `footnote.txt`, which then you will edit with a text editor. You can use markdown to write in those files.
 2. the `prepare` command will also generate a `.txt` file for every "image" (eg: `.png`, `.jpg`) found in the gallery directory. edit these files to add a description for each image.
 3. run `generate` command to get a `gallery.html` in the directory 
+
+```
+jallery
+usage: Jallery - A simple static gallery generator [-h] {prepare,generate} ...
+
+positional arguments:
+  {prepare,generate}
+
+options:
+  -h, --help          show this help message and exit
+```
