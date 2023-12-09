@@ -106,7 +106,7 @@ def main():
     )
 
     args = parser.parse_args()
-    if args.command == "prep":
+    if args.command == "prepare":
         prepare_gallery(args.directory)
     elif args.command == "generate":
         generate_gallery(args.directory, args.template, args.debug)
